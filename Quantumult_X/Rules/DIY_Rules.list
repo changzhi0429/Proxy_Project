@@ -1,7 +1,7 @@
-- DOMAIN-SUFFIX,chaoxing.com,DIRECT
-- DOMAIN-SUFFIX,www.fenbi.com,DIRECT
-- DOMAIN-KEYWORD,zhihuishu,DIRECT
-- DOMAIN-SUFFIX,bwh81.net,DIRECT
-- DOMAIN-SUFFIX,kiwivm.64clouds.com,DIRECT
-- DOMAIN-SUFFIX,virmach.com,DIRECT
-- DOMAIN-SUFFIX,vmocean.com,DIRECT
+- HOST-SUFFIX,chaoxing.com,DIRECT
+- HOST-SUFFIX,www.fenbi.com,DIRECT
+- HOST-KEYWORD,zhihuishu,DIRECT
+- HOST-SUFFIX,bwh81.net,DIRECT
+- HOST-SUFFIX,kiwivm.64clouds.com,DIRECT
+- HOST-SUFFIX,virmach.com,DIRECT
+- HOST-SUFFIX,vmocean.com,DIRECT
