@@ -1,3 +1,4 @@
+payload:
   - DOMAIN-SUFFIX,chaoxing.com,DIRECT
   - DOMAIN-SUFFIX,www.fenbi.com,DIRECT
   - DOMAIN-KEYWORD,zhihuishu,DIRECT
