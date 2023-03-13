@@ -36,7 +36,7 @@ function Num_check(para) {
 }
 
 function Area_check(para) {
-  if(para=="香港" & RegN_check(obj['regionName'])==" " & City_check(obj['city'])==" ") {
+  if(para=="香港" & RegN_check(obj['regionName'])=="" & City_check(obj['city'])=="") {
   return "中国香港特别行政区"
   } else
   {
