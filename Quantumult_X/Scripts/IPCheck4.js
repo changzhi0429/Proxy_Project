@@ -48,6 +48,10 @@ function Area_check(para) {
   return "中国 · 澳门特别行政区"
   } else
   {
+  if(para=="澳门") {
+  return "中国澳门"
+  } else
+  {
   if(para=="台湾") {
   return "中国 · 台湾"
   } else
