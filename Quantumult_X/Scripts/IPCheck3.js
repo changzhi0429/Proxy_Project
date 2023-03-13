@@ -37,26 +37,27 @@ function Num_check(para) {
 
 function Area_check(para) {
   if(para=="香港" & RegN_check(obj['regionName'])=="" & City_check(obj['city'])=="") {
-  return "中国香港特别行政区"
+  return "中国 · 香港特别行政区"
   } else
   {
   if(para=="香港") {
   return "中国香港"
   } else
   {
-  if(para=="澳门") {
-  return "中国澳门"
+  if(para=="澳门" & RegN_check(obj['regionName'])=="" & City_check(obj['city'])=="") {
+  return "中国 · 澳门特别行政区"
   } else
   {
   if(para=="台湾") {
-  return "中国台湾"
+  return "中国 · 台湾"
   } else
   {
   return para
   }
   }
   }
-}
+  }
+  }
 }
 
 function Lat_check(para) {
