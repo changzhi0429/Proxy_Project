@@ -5,58 +5,7 @@ if ($response.statusCode != 200) {
   $done(Null);
 }
 
-function RegN_check(temp) {
-  if(temp==obj['country']) {
-  return ""
-  } else
-  {
-  if(temp=="Tokyo") {
-  return "东京都"
-  } else
-  {
-  var re=/[^\u4e00-\u9fa5]/;
-  if (re.test(temp)) {
-  return ""
-  } else
-  {
-  return temp;
-  }
-  }
-  }
-}
-
-
-//function RegN_check(temp) {
-//  var re=/[^\u4e00-\u9fa5]/;
-//  if (re.test(temp)) return "";
-//  return temp;
-//}
-
-function City_check(temp) {
-  if(temp==obj['country']) {
-  return ""
-  } else
-  {
-  var re=/[^\u4e00-\u9fa5]/;
-  if (re.test(temp)) {
-  return ""
-  } else
-  {
-  return temp;
-  }
-  }
-}
-
-function Num_check(para) {
-  if(para) {
-  return 'AS'+ parseInt(para.substring(1).substring(1))
-  } else
-  {
-  return 'AS'+ parseInt(para.substring(1).substring(1))
-  }
-}
-
-function Area_check(para) {
+function Area_check(para) { //国家和地区重定义
   if(para=="香港" & RegN_check(obj['regionName'])=="" & City_check(obj['city'])=="") {
   return "中国 · 香港特别行政区"
   } else
@@ -82,6 +31,60 @@ function Area_check(para) {
   }
   }
   }
+  }
+}
+
+function RegN_check(temp) { //一级行政区重定义
+  if(temp==obj['country']) {
+  return ""
+  } else
+  {
+  if(temp=="Tokyo") {
+  return "东京都"
+  } else
+  {
+  var re=/[^\u4e00-\u9fa5]/;
+  if (re.test(temp)) {
+  return ""
+  } else
+  {
+  return temp;
+  }
+  }
+  }
+}
+
+function City_check(temp) { //二级行政区重定义
+  if(temp==obj['country']) {
+  return ""
+  } else
+  {
+  if(temp==obj['regionName']) {
+  return ""
+  } else
+  {
+  if(temp=="Chiyoda") {
+  return "千代田区"
+  } else
+  {
+  var re=/[^\u4e00-\u9fa5]/;
+  if (re.test(temp)) {
+  return ""
+  } else
+  {
+  return temp;
+  }
+  }
+  }
+  }
+}
+
+function Num_check(para) {
+  if(para) {
+  return 'AS'+ parseInt(para.substring(1).substring(1))
+  } else
+  {
+  return 'AS'+ parseInt(para.substring(1).substring(1))
   }
 }
 
