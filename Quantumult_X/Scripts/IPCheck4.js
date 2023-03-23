@@ -10,7 +10,7 @@ function RegN_check(temp) {
   return ""
   } else
   {
-  if(para=="Tokyo") {
+  if(temp=="Tokyo") {
   return "东京都"
   } else
   {
