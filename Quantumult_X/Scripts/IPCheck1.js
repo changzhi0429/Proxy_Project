@@ -6,10 +6,26 @@ if ($response.statusCode != 200) {
 }
 
 function RegN_check(temp) {
-  var re=/[^\u4e00-\u9fa5]/;
-  if (re.test(temp)) return "";
-  return temp;
+  if(temp=='Tokyo']) {
+  return "东京都"
+  } else
+  {
+    var re=/[^\u4e00-\u9fa5]/;
+    if (re.test(temp)) {
+      return ""
+    } else
+    {
+      return temp;
+    }
+  }
 }
+
+
+//function RegN_check(temp) {
+//  var re=/[^\u4e00-\u9fa5]/;
+//  if (re.test(temp)) return "";
+//  return temp;
+//}
 
 function City_check(temp) {
   if(temp==obj['country']) {
