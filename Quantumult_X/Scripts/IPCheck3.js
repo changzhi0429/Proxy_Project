@@ -14,13 +14,14 @@ function RegN_check(temp) {
   return "东京都"
   } else
   {
-    var re=/[^\u4e00-\u9fa5]/;
-    if (re.test(temp)) {
-      return ""
-    } else
-    {
-      return temp;
-    }
+  var re=/[^\u4e00-\u9fa5]/;
+  if (re.test(temp)) {
+  return ""
+  } else
+  {
+  return temp;
+  }
+  }
   }
 }
 
@@ -36,13 +37,13 @@ function City_check(temp) {
   return ""
   } else
   {
-    var re=/[^\u4e00-\u9fa5]/;
-    if (re.test(temp)) {
-      return ""
-    } else
-    {
-      return temp;
-    }
+  var re=/[^\u4e00-\u9fa5]/;
+  if (re.test(temp)) {
+  return ""
+  } else
+  {
+  return temp;
+  }
   }
 }
 
