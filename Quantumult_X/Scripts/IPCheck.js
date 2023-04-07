@@ -34,7 +34,16 @@ function Area_check(para) { //国家和地区重定义
   }
 }
 
-function RegN_check(temp) { //一级行政区重定义
+function RegNtit_check(temp) { //一级行政区重定义
+  if(flags.get(obj['countryCode'])=="🇺🇸") {
+  return ""
+  } else
+  {
+  return "东京都"
+  }
+}
+
+function RegNdes_check(temp) { //一级行政区重定义
   if(temp==obj['country']) {
   return ""
   } else
