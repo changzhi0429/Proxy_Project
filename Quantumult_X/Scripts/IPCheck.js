@@ -40,6 +40,7 @@ function RegN_title_check(temp) { //一级行政区重定义
   } else
   {
   return temp
+  }
 }
 
 function RegN_subtitle_check(temp) { //一级行政区重定义
