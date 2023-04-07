@@ -120,10 +120,10 @@ var flags = new Map([["AC","🇦🇨"],["AD","🇦🇩"],["AE","🇦🇪"],["AF"
 
 var body = $response.body;
 var obj = JSON.parse(body);
-var title = flags.get(obj['countryCode']) + ' '+ Area_check(obj['country']) + ' '+ RegN_check(obj['regionName']) + ' ' + City_check(obj['city']);
+var title = flags.get(obj['countryCode']) + ' '+ Area_check(obj['country']) + ' '+ RegNtit_check(obj['regionName']) + ' ' + City_check(obj['city']);
 var subtitle = obj['org'] + ' · ' + Num_check(obj['as']) + ' · ' + obj['query'];
 var ip = obj['query'];
-var description = '\n' + '--------------------------' + '\n\n\n' + Area_check(obj['country']) + ' '+ RegN_check(obj['regionName']) + ' ' + City_check(obj['city']) + '\n\n' + obj['timezone'] + '\n\n' + obj['query'] + '\n\n' + Lat_check(obj['lat']) + '  ,  '+ Lon_check(obj['lon']) + '\n\n' + obj['isp'] + '\n\n' + obj['org'];
+var description = '\n' + '--------------------------' + '\n\n\n' + Area_check(obj['country']) + ' '+ RegNdes_check(obj['regionName']) + ' ' + City_check(obj['city']) + '\n\n' + obj['timezone'] + '\n\n' + obj['query'] + '\n\n' + Lat_check(obj['lat']) + '  ,  '+ Lon_check(obj['lon']) + '\n\n' + obj['isp'] + '\n\n' + obj['org'];
 
 
 $done({title, subtitle, ip, description});
