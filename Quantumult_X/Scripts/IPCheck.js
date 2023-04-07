@@ -6,7 +6,7 @@ if ($response.statusCode != 200) {
 }
 
 function Area_check(para) { //国家和地区重定义
-  if(para=="香港" & RegN_check(obj['regionName'])=="" & City_check(obj['city'])=="") {
+  if(para=="香港" & RegNtit_check(obj['regionName'])=="" & City_check(obj['city'])=="") {
   return "中国 · 香港特别行政区"
   } else
   {
@@ -14,7 +14,7 @@ function Area_check(para) { //国家和地区重定义
   return "中国香港"
   } else
   {
-  if(para=="澳门" & RegN_check(obj['regionName'])=="" & City_check(obj['city'])=="") {
+  if(para=="澳门" & RegNtit_check(obj['regionName'])=="" & City_check(obj['city'])=="") {
   return "中国 · 澳门特别行政区"
   } else
   {
@@ -35,7 +35,7 @@ function Area_check(para) { //国家和地区重定义
 }
 
 function RegNtit_check(temp) { //一级行政区重定义
-  if(temp=="" & flags.get(obj['countryCode'])=="🇺🇸") {
+  if(flags.get(obj['countryCode'])=="🇺🇸") {
   return ""
   } else
   {
