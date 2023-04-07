@@ -48,7 +48,7 @@ function RegN_check(temp) { //一级行政区重定义
   return ""
   } else
   {
-  return temp;
+  return temp
   }
   }
   }
@@ -72,7 +72,7 @@ function City_check(temp) { //二级行政区重定义
   return ""
   } else
   {
-  return temp;
+  return temp
   }
   }
   }
