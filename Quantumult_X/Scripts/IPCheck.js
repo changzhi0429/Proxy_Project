@@ -36,10 +36,10 @@ function Area_check(para) { //国家和地区重定义
 
 function RegN_title_check(temp) { //一级行政区重定义
   if(obj['countryCode']=="US") {
-  return temp = ""
+  return ""
   } else
   {
-  return temp
+  return ""
   }
 }
 
