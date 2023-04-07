@@ -35,7 +35,7 @@ function Area_check(para) { //国家和地区重定义
 }
 
 function RegNtit_check(temp) { //一级行政区重定义
-  if(flags.get(obj['countryCode'])=="🇺🇸") {
+  if(temp=="" & flags.get(obj['countryCode'])=="🇺🇸") {
   return ""
   } else
   {
