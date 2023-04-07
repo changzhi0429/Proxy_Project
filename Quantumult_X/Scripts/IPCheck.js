@@ -34,9 +34,10 @@ function Area_check(para) { //国家和地区重定义
   }
 }
 
-function RegNtit_check(temp1),
-function flags.get(temp2) { //一级行政区重定义
-  if(obj['countryCode']=="US") {
+var couC = obj['countryCode']
+
+function RegNtit_check(temp1) { //一级行政区重定义
+  if(couC=="US") {
   return ""
   } else
   {
