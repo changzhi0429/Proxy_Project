@@ -39,25 +39,7 @@ function RegNtit_check(para) { //一级行政区重定义
   return ""
   } else
   {
-  function RegNdes_check(temp) { //一级行政区重定义
-  if(temp==obj['country']) {
-  return ""
-  } else
-  {
-  if(temp=="Tokyo") {
-  return "东京都"
-  } else
-  {
-  var re=/[^\u4e00-\u9fa5]/;
-  if (re.test(temp)) {
-  return ""
-  } else
-  {
-  return temp
-  }
-  }
-  }
-}
+  return para = RegNdes_check(obj['regionName'])
   }
 }
 
