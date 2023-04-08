@@ -34,8 +34,8 @@ function Area_check(para) { //国家和地区重定义
   }
 }
 
-function RegNtit_check(temp) { //一级行政区重定义
-  if(temp=="" || Area_check(obj['country'])="美国") {
+function RegNtit_check(para) { //一级行政区重定义
+  if(para=="" || Area_check(obj['country'])="美国") {
   return ""
   } else
   {
