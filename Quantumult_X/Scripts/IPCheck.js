@@ -39,7 +39,7 @@ function RegNtit_check(para) { //一级行政区重定义
   return ""
   } else
   {
-  return "东京都"
+  return RegNdes_check(obj['regionName'])
   }
 }
 
