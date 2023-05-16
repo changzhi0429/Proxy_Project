@@ -3,4 +3,4 @@ HOST-SUFFIX,www.fenbi.com,DIRECT
 HOST-KEYWORD,zhihuishu,DIRECT
 HOST-KEYWORD,m-team,DIRECT
 HOST-SUFFIX,www.cloud2023.cloud,DIRECT
-HOST-SUFFIX,hostloc.com,PROX
+HOST-SUFFIX,hostloc.com,PROXY
